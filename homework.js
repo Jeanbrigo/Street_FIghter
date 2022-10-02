@@ -20,6 +20,7 @@ const ken = new Fighter("Ken",this.health,this.strength,this.defense);
 console.log(ryu, ken)
 
 for(rounds = 0; rounds < 10; rounds += 1 ){
+    console.log(`Round ${rounds + 1}!`)
     ryu.attack(ken);
     ken.attack(ryu);
     if (ken.health <= 0 && ryu.health <= 0){
